@@ -27,7 +27,7 @@ app.use(
 );
 app.use(cookieParser());
 app.use(express.json());
-app.use("/", authRoute);
+app.use("/", AuthRoute);
 
 // Export your Express app wrapped with serverless-http
 module.exports.handler = serverless(app);
