@@ -1,0 +1,28 @@
+.NavigationBar {
+  width: 80%;
+  margin: 20px auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  background: #007bff67;
+  padding: 0 40px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.welcome {
+  font-size: 25px;
+  font-weight: 700;
+  font-weight: 5px;
+  background: transparent;
+}
+.logoutbtn {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}

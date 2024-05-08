@@ -1,0 +1,10 @@
+.span {
+  display: inline-block;
+  width: 200px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+input[type="radio"] {
+  transform: scale(1.5);
+}

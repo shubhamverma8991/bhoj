@@ -1,0 +1,86 @@
+.shipper > div,
+.receiver > div,
+.other > div,
+.parcel > div {
+  margin: 10px 0;
+}
+label {
+  display: inline-block;
+  width: 200px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.smallinput {
+  width: 200px;
+}
+select,
+input:not([type="radio"]) {
+  width: 100%;
+  height: 35px;
+  line-height: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: grey;
+}
+/* Width */
+.parentSec {
+  width: 100%;
+}
+.shipper,
+.receiver {
+  width: 40%;
+}
+.other {
+  width: 40%;
+}
+.other > div {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Border */
+.border-1 {
+  /*border: 1px solid black;
+  */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.booked {
+  color: green;
+}
+
+@media only screen and (max-width: 768px) {
+  .shipper,
+  .receiver,
+  .other {
+    width: 100%; /* Adjust width as needed for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .parcel > div {
+    width: 100%;
+  }
+  .parcel > div > input {
+    margin: 0;
+  }
+  /* .size {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  } */
+}
