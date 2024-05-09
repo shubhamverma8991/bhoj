@@ -8,11 +8,10 @@ const cookieParser = require("cookie-parser");
 const authRoute = require("./Routes/AuthRoute");
 const { MONGO_URL } = process.env; // Remove PORT from process.env
 
-
-app.get("/", (req, res) => {
-  res.send(`Server ${PORT} is Up and running Smooth`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
-
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
@@ -20,8 +19,6 @@ mongoose
   })
   .then(() => console.log("MongoDB is connected successfully"))
   .catch((err) => console.error(err));
-
-// Remove app.listen() as it's not needed for serverless deployment
 
 app.use(
   cors({
