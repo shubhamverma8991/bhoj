@@ -8,6 +8,11 @@ const cookieParser = require("cookie-parser");
 const authRoute = require("./Routes/AuthRoute");
 const { MONGO_URL } = process.env; // Remove PORT from process.env
 
+
+app.get("/", (req, res) => {
+  res.send(`Server ${PORT} is Up and running Smooth`);
+});
+
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
