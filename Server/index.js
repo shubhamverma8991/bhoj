@@ -31,5 +31,9 @@ app.use(cookieParser());
 app.use(express.json());
 app.use("/", authRoute);
 
+app.get("/test", (req, res) => {
+  res.status(200).send("GET request to the homepage successful");
+});
+
 // Export your Express app wrapped with serverless-http
 module.exports.handler = serverless(app);
